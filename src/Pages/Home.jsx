@@ -1,4 +1,5 @@
 import logo from "Assets/Images/logo-color.png";
+import { Link } from "react-router-dom";
 
 export default function Home() {
     return (
@@ -20,8 +21,12 @@ export default function Home() {
                         </h1>
                     </div>
                     <div>
-                        <button className="rounded-md px-5 py-2 bg-gray-700 font-mono font-bold text-white text-2xl">Register</button>
-                        <button className="rounded-md px-5 py-2 mx-4 bg-purple-950 font-mono font-bold text-white text-2xl">Login</button>
+                        <button className="rounded-md px-5 py-2 bg-gray-700 hover:bg-slate-600 font-mono font-bold text-white text-2xl">
+                            <Link to="/signup">Register</Link>
+                        </button>
+                        <button className="rounded-md px-5 py-2 mx-4 bg-purple-950 hover:bg-purple-900 font-mono font-bold text-white text-2xl">
+                            <Link to="/login">Login</Link>
+                        </button>
                     </div>
 
                 </div>
